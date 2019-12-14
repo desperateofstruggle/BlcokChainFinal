@@ -8,8 +8,8 @@
         </el-input>
      </el-form-item>
      <el-form-item label="">
-        <el-input v-model="datas.amount" placeholder="请输入融资金额" class='inputClass' @input="change($event)">
-          <template slot="prepend">金额</template>
+        <el-input v-model="datas.amount" placeholder="请输入银行公钥" class='inputClass' @input="change($event)">
+          <template slot="prepend">银行公钥</template>
         </el-input>
      </el-form-item>
      <el-form-item label="">
@@ -32,10 +32,10 @@ export default {
             { required: true, message: "公钥不能为空", trigger: "blur"}
         ],
         amount: [
-            { required: true, message: "金额不能为空", trigger: "blur"}
+            { required: true, message: "公钥不能为空", trigger: "blur"}
         ],
         time: [
-            { required: true, message: "还款金额不能为空", trigger: "blur"}
+            { required: true, message: "时间不能为空", trigger: "blur"}
         ]
       },
       datas: {}
